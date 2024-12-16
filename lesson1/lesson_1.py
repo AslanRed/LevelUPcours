@@ -30,7 +30,7 @@ print(type(b))
 
 #sixth
 a = input('enter True or False: ')
-a != 'False'
+a = a != 'False'
 print(a)
 
 #seventh
