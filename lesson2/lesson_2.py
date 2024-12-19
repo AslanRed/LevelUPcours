@@ -12,7 +12,7 @@ res = a % 2
 if res == 0:
     print(f'{a} is even')
 else:
-    print(f'{a}is not even')
+    print(f'{a} is not even')
 #task 3 negative? positive or 0
 a = int(input('enter num: '))
 if a > 0:
