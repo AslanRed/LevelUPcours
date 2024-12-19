@@ -82,10 +82,9 @@ else:
 a = int(input('enter num: '))
 dev_by_3 = a % 3
 dev_by_5 = a % 5
-if dev_by_3 == 0:
-    if dev_by_5 == 0:
-        print('FizzBuzz')
-    else:
+if dev_by_3 == 0 and dev_by_5 == 0:
+    print('FizzBuzz')
+elif dev_by_3 == 0:
         print('Fizz')
 elif dev_by_5 == 0:
     print('Buzz')
