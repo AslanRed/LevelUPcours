@@ -3,8 +3,10 @@ a = int(input('enter first num: '))
 b = int(input('enter second num: '))
 if a > b:
     print(f'{a} is biger')
-else:
+elif a < b:
     print(f'{b} is biger')
+else: 
+    print(f'{a} and {b} are equal')
 
 #task 2
 a = int(input('enter num: '))
