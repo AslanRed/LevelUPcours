@@ -61,7 +61,7 @@ if time_of_day >= 6 and time_of_day <= 11:
     print('Good morning')
 elif time_of_day > 11 and time_of_day <= 17:
     print('Good afternoon')
-elif time_of_day > 17 and time_of_day <=23:
+elif time_of_day > 17 and time_of_day <= 23:
     print('Good evening')
 else:
     print('Good night')
