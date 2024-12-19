@@ -15,6 +15,8 @@ if res == 0:
     print(f'{a} is even')
 else:
     print(f'{a} is not even')
+
+
 #task 3 negative? positive or 0
 a = int(input('enter num: '))
 if a > 0:
@@ -37,11 +39,12 @@ elif o == '-':
 elif o == '*':
     result = a * b
     print(f'{result} is your result')
-elif o == '/' and b != 0:
-    result = a / b 
-    print(f'{result} is your result')
-elif o == '/' and b == 0:
-    print('cant devide with 0')
+elif o == '/':
+    if b != 0:
+        result = a / b
+        print(f'{result} is your result')
+    else:
+         print('can not devide with 0')
 else: 
     print('eror: no such operator')
 
@@ -73,3 +76,18 @@ if p == default_pas:
     print('Доступ разрешен.')
 else:
     print('Доступ запрешен.')
+
+
+#task 8 fizzbuzz
+a = int(input('enter num: '))
+dev_by_3 = a % 3
+dev_by_5 = a % 5
+if dev_by_3 == 0:
+    if dev_by_5 == 0:
+        print('FizzBuzz')
+    else:
+        print('Fizz')
+elif dev_by_5 == 0:
+    print('Buzz')
+else:
+    print(a)
