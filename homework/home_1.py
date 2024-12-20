@@ -58,123 +58,17 @@ else:
     print('Ведено недопустимое значение!')
 
 #Задача 5. Определение четверти на плоскости
-coordinate_1_x = input('Введите первое значение координаты по х: ')
-coordinate_1_y = input('Введите первое значение координаты по y: ')
-
-coordinate_2_x = input('Введите второе значение координаты по х: ')
-coordinate_2_y = input('Введите второе значение координаты по y: ')
-
-coordinate_3_x = input('Введите третье значение координаты по х: ')
-coordinate_3_y = input('Введите третье значение координаты по y: ')
-
-if coordinate_1_x.isdigit() and coordinate_1_y.isdigit() and coordinate_2_x.isdigit() and coordinate_2_y.isdigit() and coordinate_3_x.isdigit() and coordinate_3_y.isdigit():
-    coordinate_1_x = int(coordinate_1_x)
-    coordinate_1_y = int(coordinate_1_y)
-
-    coordinate_2_x = int(coordinate_2_x)
-    coordinate_2_y = int(coordinate_2_y)
-
-    coordinate_3_x = int(coordinate_3_x)
-    coordinate_3_y = int(coordinate_3_y)
+coordinate_x = input('Введите первое значение координаты по х: ')
+coordinate_y = input('Введите первое значение координаты по y: ')
+x = int(coordinate_x)
+y = int(coordinate_y)
+if x > 0 and y > 0:
+    print('Точка находится в первой четверти')
+elif x < 0 and y > 0:
+    print('Точка находится во второй четверти')
+elif x < 0 and y < 0:
+    print('Точка находится в третьей четверти')
+elif x > 0 and y < 0:
+    print('Точка находится в четвертой четверти')
 else:
-    print('Введено недопустимое значение!')
-
-# проверка первой точки
-if coordinate_1_x > 0:
-    x_1 = 1
-elif coordinate_1_x < 0:
-    x_1 = -1
-else:
-    x_1 = 0
-if coordinate_1_y > 0:
-    y_1 = 1
-elif coordinate_1_y < 0:
-    y_1 = -1
-else:
-    y_1 = 0
-
-# проверка второй точки
-if coordinate_2_x > 0:
-    x_2 = 1
-elif coordinate_2_x < 0:
-    x_2 = -1
-else:
-    x_2 = 0
-if coordinate_2_y > 0:
-    y_2 = 1
-elif coordinate_2_y < 0:
-    y_2 = -1
-else:
-    y_2 = 0
-
-# проверка третей точки
-if coordinate_3_x > 0:
-    x_3 = 1
-elif coordinate_3_x < 0:
-    x_3 = -1
-else:
-    x_3 = 0
-if coordinate_3_y > 0:
-    y_3 = 1
-elif coordinate_1_y < 0:
-    y_3 = -1
-else:
-    y_3 = 0
-
-# нахождение четверти, в которой находиться точка
-f_point = x_1 + y_1
-s_point = x_2 + y_2
-t_point = x_3 + y_3
-
-# первая точка
-if f_point == 2:
-    point_1_in = 1
-elif f_point == -2:
-    point_1_in = 3
-elif f_point == 0:
-    if x_1 == -1:
-        point_1_in = 2
-    else:
-        point_1_in = 4
-else:
-    point_1_in = 0
-
-# вторая точка
-if s_point == 2:
-    point_2_in = 1
-elif s_point == -2:
-    point_2_in = 3
-elif s_point == 0:
-    if x_2 == -1:
-        point_2_in = 2
-    else:
-        point_2_in = 4
-else:
-    point_2_in = 0
-
-# третья точка
-if t_point == 2:
-    point_3_in = 1
-elif t_point == -2:
-    point_3_in = 3
-elif t_point == 0:
-    if x_3 == -1:
-        point_3_in = 2
-    else:
-        point_3_in = 4
-else:
-    point_3_in = 0
-
-# нахождение места прямой
-sum_of_points = point_1_in + point_2_in + point_3_in
-if sum_of_points == 2:
-    print('Прямая находится в первой четверти.')
-elif sum_of_points == 6:
-    print('Прямая находится во второй четверти.')
-elif sum_of_points == 9:
-    print('Прямая находится в третей четверти.')
-elif sum_of_points == 12:
-    print('Прямая находится в четвертой четверти.')
-else:
-    print('Прямая находится в двух четвертях.')
-        
+    print('Точка лежит на самой оси координат')
