@@ -2,7 +2,7 @@ import random
 
 #Задача 1. Приветствие с регистром. 
 name_for_greeting = input('Введите свое имя: ')
-rand = random.randint(0, 11)
+rand = random.randint(0, 1)
 if name_for_greeting.isalpha():
     if rand == 0:
         name_result = name_for_greeting.upper()
