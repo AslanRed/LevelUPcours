@@ -20,6 +20,6 @@
 #3 треугольник начиная с 5 звездочек до 1
 brick = '*'
 size = 5
-while size > 0:
-    print(brick * size)
-    size -= 1
+for i in range(size, 0, -1)
+    while size > 0:
+        print(brick * size)
