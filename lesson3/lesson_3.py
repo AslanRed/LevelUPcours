@@ -1,9 +1,9 @@
-# default_pas = '1234'
-# while True:
-#     u_pass = input('Введите пароль: ')
-#     if default_pas == u_pass:
-#         print('Вход разрешен!')
-#         break
+# # default_pas = '1234'
+# # while True:
+# #     u_pass = input('Введите пароль: ')
+# #     if default_pas == u_pass:
+# #         print('Вход разрешен!')
+# #         break
 
 #1 Сумма всех чисел от одного до ста включительно.
 res = 0
@@ -51,3 +51,17 @@ for i in range(2, get_num):
         break
     else:
         print('Число простое')
+
+#7 проверка полиндрома
+get_str = input('enter a word: ')
+str_for_test = get_str.upper()
+last_s = -1
+res = ''
+for i in str_for_test:
+    res += str_for_test[last_s]
+    last_s -= 1
+if res == str_for_test:
+    print('Это полиндром')
+else:
+    print('Это не полиндром')
+    
