@@ -59,6 +59,18 @@ lst_of_parts = text.split(' - ')
 book_title = lst_of_parts[0]
 chapter_number = lst_of_parts[1]
 print(f'Книга: {book_title}, Глава: {chapter_number}')
+# Разделить строку с книгой и главой на отдельные части. первое решение не нравилось (больше на хардкодинг похоже), решил переделать вот так:
+text = 'Гарри Поттер и Тайная комната - Глава 2'
+book_title = ''
+chapter_number = ''
+text_lst = text.split(' - ')
+for words in text_lst:
+    if 'Глава' in words:
+        chapter_number = words
+    else:
+        book_title = words
+print(f'Книга: {book_title}, Глава: {chapter_number}')
+
 
 # Выбрать случайное поздравление, если не содержат - "скучный"
 greetings = ['С днем рождения!', 'С Новым годом!', 'Желаю успехов!', 'Скучный текст']
