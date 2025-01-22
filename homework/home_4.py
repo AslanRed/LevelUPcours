@@ -1,5 +1,5 @@
 #1 Сумма всех чисел от одного до ста включительно.
-res = print(f'сумма от 1 до 100: {sum(num for num in range(101))}')
+print(f'сумма от 1 до 100: {sum(num for num in range(101))}')
 
 #2 Запрашивает строку и выводит каждый символ на новой строке.
 result = [print(symbol) for symbol in input('enter a string: ')]
