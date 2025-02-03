@@ -7,6 +7,7 @@ class Animal():
         self.name = name
         self.species = species
 
+
 class Mammal(Animal):
     def __init__(self, name, species, warm_blood = True):
          super().__init__(name, species,)
@@ -15,6 +16,7 @@ class Mammal(Animal):
     def display_info(self):
         print(f'{self.name} - {self.species}: warm blood = {self.warm_blood}')
 
+
 class Bird(Animal):
     def __init__(self, name, species, can_fly = True):
          super().__init__(name, species)
@@ -22,6 +24,7 @@ class Bird(Animal):
 
     def display_info(self):
         print(f'{self.name} - {self.species}: can fly = {self.can_fly}')
+
 
 class Zoo():
     def __init__(self):
