@@ -17,10 +17,3 @@ class CalcShot():
     def find_max_distance(self):
         max_distance = ((self.start_speed ** 2) * (math.sin(2*self.shot_angle)))/ 9.81
         return print (f'max distance {max_distance}')
-
-if __name__ == '__main__':
-
-    calc_for_shooting = CalcShot(100, 180)
-    calc_for_shooting.find_max_distance()
-    calc_for_shooting.find_max_time()
-    calc_for_shooting.find_max_hight()
