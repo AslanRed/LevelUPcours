@@ -33,7 +33,7 @@ class CalcShot():
             val_time.append(time)
             if y <= 0:
                 print(f'Time in air {time}')
-                print(f'Max height {val_y}')
+                print(f'Max height {round(max(val_y))}')
                 print(f'Max distance {round(max(val_x))}')
                 print(f'Max speed {round(max(val_speed))}')
                 break
@@ -44,5 +44,7 @@ class CalcShot():
         plt.grid()
         plt.show()
 
-calc = CalcShot(210, 180, 4.5, 0.0005, 0.023)
-calc.shoot()
+
+if __name__ == '__main__':
+    calc = CalcShot(210, 120, 4.5, 0.0005, 0.023)
+    calc.shoot()
